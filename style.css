@@ -202,6 +202,23 @@ h3{
     transform: translateY(-2px);
 }
 
+#backToTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#backToTop:hover{
+    background-color: var(--secondary-color);
+}
+
 input, textarea{
     text-align: left;
     padding-left: 10px;
