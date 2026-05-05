@@ -56,7 +56,7 @@ h1, h2, h3{
 }
 
 nav {
-    margin: 1em auto 3em auto;
+    margin: 1em auto 1.5em auto;
     width: min(500px, 100%);
 }
 
@@ -69,10 +69,10 @@ nav ul {
 }
 
 nav li{
-    margin: 0 40px;
+    margin: 0 60px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     color: var(--background-color);
 }
 
@@ -83,6 +83,12 @@ nav a{
 
 nav a:hover{
     text-decoration: underline;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+nav li:hover{
+    text-decoration: underline;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 header, section{
@@ -187,7 +193,14 @@ h3{
     padding: .75em 1.25em;
     border-radius: .5em;
     font-weight: 600;
+    transition: akk 0.3s ease;
 }  
+
+.cta-button:hover{
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
 
 input, textarea{
     text-align: left;
@@ -221,7 +234,7 @@ form{
 .right{
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url("max.png");
+        url("matlab.png");
 
     background-size: cover;
     background-position: center;
@@ -244,7 +257,7 @@ form{
     .right{
         background-image: 
             linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url("max.png");
+            url("matlab.png");
             
         width: 100%;
         height: 250px;
