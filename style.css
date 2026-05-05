@@ -249,6 +249,40 @@ form{
     text-align: center;
 }
 
+#wrapper{
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.zoomable{
+    width: 800px;
+    height: 500px;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.zoomable.zoomed{
+    transform: scale(1.5);
+    cursor: zoom-out
+}
+
+#overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
 /* mobile */
 @media (max-width: 768px){
 

@@ -7,7 +7,7 @@ document.querySelectorAll("a").forEach(link => {
         return;
         }
 
-            // only run for internal links
+            // only fade for internal links
             if (this.hostname === window.location.hostname) {
                 e.preventDefault();
 
