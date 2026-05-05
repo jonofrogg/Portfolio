@@ -43,12 +43,12 @@ body::after{
     transition: opacity 0.4s ease-in-out;
 }
 
-body.fade-out {
+body.fade-out::after{
     opacity: 1;
 }
 
-body.fade-out::after{
-    opacity: 1;
+body.fade-in::after{
+    opacity: 0;
 }
 
 h1, h2, h3{
@@ -245,6 +245,8 @@ form{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
 }
 
 /* mobile */

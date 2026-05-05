@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="email.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,27 +25,17 @@
            <br>
            The user can eventually record and bounce a live track to a wav file.
         </p>
-        <div class="video-content">
-            <video src = "max.mkv" controls width = "500" height = "300"></video>
-        </div>    
     </div> 
 
-    <script>
-    document.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", function (e) {
+    <div class="video-content">
+            <video src = "max.mkv" controls width = "500" height = "300"></video>
+        <br>
+        <br>
+         <a href="CW2_SPIELWERK_v2.zip" download>
+                <button class="cta-button">Download The Patch</button>
+            </a> 
+    </div>   
 
-            // only run for internal links
-            if (this.hostname === window.location.hostname) {
-                e.preventDefault();
-
-                document.body.classList.add("fade-out");
-
-                setTimeout(() => {
-                    window.location = this.href;
-                }, 400);
-            }
-        });
-    });
-    </script>
+    <script src="transition.js"></script>
 
     </body>
