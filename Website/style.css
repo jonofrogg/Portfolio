@@ -243,6 +243,28 @@ form{
 
 /* mobile */
 @media (max-width: 768px){
+
+    nav {
+    margin: 1em auto 1.5em auto;
+    width: min(200px, 100%);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 1em;
+    }
+
+    nav li{
+        margin: 0 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        color: var(--background-color);
+    }
+    
     .container{
         flex-direction: column;
         min-height: unset;
