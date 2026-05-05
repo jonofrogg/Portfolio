@@ -1,4 +1,8 @@
 document.querySelectorAll("a").forEach(link => {
+        if(link.dataset.fadeBound) return;
+
+        link.dataset.fadeBound = "true";
+
         link.addEventListener("click", function (e) {
             const href = link.getAttribute("href");
 
@@ -19,3 +23,6 @@ document.querySelectorAll("a").forEach(link => {
             }
         });
     });
+
+    window.addEventListener("load", init);
+    window.addEventListener("pageshow", init);
