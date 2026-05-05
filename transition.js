@@ -25,4 +25,6 @@ document.querySelectorAll("a").forEach(link => {
     });
 
     window.addEventListener("load", init);
-    window.addEventListener("pageshow", init);
+    window.addEventListener("pageshow", () => {
+        document.body.classList.remove("fade-out");
+    });
