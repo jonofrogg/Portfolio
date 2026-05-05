@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="left">
+                <div class = "header-content">
+                    <h1>Jonathan Wells</h1>
+                    <br> 
+                    <h2>Audio Technology Graduate</h2>
+
+                    <p> I have recently completed a BSc(hons) degree
+                    in Audio Technology at Glasgow Caledonian University.
+                    </p>
+                    <br>
+                    <a href="portfolio.html" class="cta-button">My Portfolio</a>       
+                </div>
+            </div>
+
+            <div class="right"></div>
+    </div>
+
+    <script>
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function (e) {
+
+            // only run for internal links
+            if (this.hostname === window.location.hostname) {
+                e.preventDefault();
+
+                document.body.classList.add("fade-out");
+
+                setTimeout(() => {
+                    window.location = this.href;
+                }, 400);
+            }
+        });
+    });
+    </script>
+</body>
