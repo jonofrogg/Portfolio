@@ -249,12 +249,6 @@ form{
     text-align: center;
 }
 
-#wrapper{
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-}
-
 .zoomable{
     width: 800px;
     height: 500px;
